@@ -7,6 +7,19 @@ $gituser = "GoKEV";		## Change this to the github user you want to download
 $githuburl = 'https://api.github.com/users/' . $gituser . '/repos?per_page=100';
 
 ##################################################
+##	A quick note on CHATTR - even root	##
+##	will not be able to delete the files	##
+##	you write until you do a `chattr -i`	##
+##	on them.  This will be scary if you	##
+##	are not familiar with chattr.  Search	##
+##	the term "immutable" or do the cmd	##
+##	`man chattr` for more info on this.	##
+##						##
+##	I wrote it this way so I won't make	##
+##	changes to this version of the repos.	##
+##	This will force me to edit them in	##
+##	another spot and commit.		##
+##################################################
 ##	Nothing to configure below here.	##
 ##################################################
 
